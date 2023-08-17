@@ -1,0 +1,6 @@
+<ol>
+  <p>All lists</p>
+    <% @lists.each do |list| %>
+      <li><%= link_to list.name, list_path(list) %></li>
+    <% end %>
+</ol>
